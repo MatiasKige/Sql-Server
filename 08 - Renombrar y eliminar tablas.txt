@@ -1,0 +1,48 @@
+--Consultamos a nuestro sistema cuales tablas pertenecen a nuestra base de datos.
+
+select * from sys.tables;
+
+--Mostrar la tabla Empleados.
+
+select * from Empleados;
+
+--Mostrar los registros de la columna nombre de la tabla Empleados.
+
+select nombre from Empleados;
+
+--Mostrar los registros de las columnas nombre, apellido y salario de la tabla Empleados.
+
+select nombre,apellido,salario from Empleados;
+
+--Renombrar la tabla Empleados por Usuarios.
+
+exec sp_rename 'Empleados','Usuarios';
+
+--Mostrar la tabla Usuarios.
+
+select * from Usuarios;
+
+--Renombrar la tabla Usuarios por Empleados.
+
+exec sp_rename 'Usuarios','Empleados';
+
+--Se crea una base de datos llamada Prueba2.
+
+create database Prueba2;
+
+--Nos situamos en la base de datos creada recientemente para realizar consultas desde allí.
+
+use Prueba2;
+
+--Creamos una tabla llamada Prueba en la base de datos Prueba2.
+
+create table Prueba(
+campo int);
+
+--Volvemos a situarnos en la base de datos Principal.
+
+use Principal;
+
+--Eliminamos la tabla Prueba.
+
+drop table Prueba;

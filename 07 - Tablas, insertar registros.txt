@@ -1,0 +1,17 @@
+--Detalles de la tabla Empleados.
+
+exec sp_help Empleados;
+
+--Se ingresan dos registros.
+
+insert into Empleados values(    
+1,'José','Feliciano',35,1234567890,'calle primera n1','1980-06-03',30000.00,'Si'
+); 
+
+insert into Empleados values(    
+2,'Manuel','Gonzalez',25,0123456789,'calle segunda n2','1977-06-05',45000.00,'No' 
+);
+
+--Traemos todo de la tabla Empleados.
+
+select * from Empleados; 

@@ -1,0 +1,18 @@
+select * from empleados;
+
+--Añadimos a la tabla Empleados el campo sexo.
+
+alter table Empleados add sexo char(1);
+
+--Añadimos un registro a la tabla Empleados.
+
+insert into Empleados values (1, 'Juan', 'Pérez', 25, 1234567890, 'Calle 123', '1978-06-15', 2500.00, 'SI','M');
+
+--Añadimos a la tabla Empleados el campo fe_contratacion.
+
+alter table Empleados add fe_contratacion date;
+
+--Eliminamos de la tabla Empleados los campos fe_contratacion y sexo.
+
+alter table Empleados drop column fe_contratacion;
+alter table Empleados drop column sexo;

@@ -1,0 +1,24 @@
+--Registros en donde idempleado sea 3.
+
+select * from Empelados where idempleado = 3;
+
+--Registros en donde edad sea distinta a 25.
+
+select * from Empleados where edad != 25;
+select * from Empleados where edad <> 25;
+
+--Registros en donde el salario sea mayor a 2000.
+
+select * from Empleados where salario > 2000;
+
+--Registros en donde el salario sea menor a 3000.
+
+select * from Empleados where salario < 3000;
+
+--Registros en donde el salario sea menor o igual a 2500.
+
+select * from Empleados where salario <= 2500;
+
+--Registros en donde el salario sea mayor a 3000.
+
+select * from Empleados where salario >= 2500;

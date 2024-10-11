@@ -1,0 +1,16 @@
+--Se crean dos bases de datos, Prueba y Prueba2.
+
+create database Prueba;
+create database Prueba2;
+
+--Se elimina la base de datos Prueba.
+
+drop database Prueba;
+
+--Lista de todas las bases de datos en el servidor.
+
+select * from sys.databases;
+
+--Se modifica el nombre de la base de datos Prueba a Principal.
+
+alter database Prueba modify name = Principal;
